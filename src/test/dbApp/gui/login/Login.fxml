@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.dbApp.gui.login.Login">
+   <children>
+      <FlowPane alignment="CENTER" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <VBox alignment="CENTER_LEFT" prefHeight="400.0" prefWidth="215.0">
+               <children>
+                  <FlowPane>
+                     <children>
+                        <Label text="Plattfot Login">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </FlowPane>
+                  <Label alignment="BASELINE_LEFT" text="Brukernavn">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="usernameField" />
+                  <Label alignment="BASELINE_LEFT" layoutX="10.0" layoutY="192.0" text="Passord">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="passwordField" />
+                  <BorderPane prefHeight="67.0" prefWidth="215.0">
+                     <left>
+                        <Button fx:id="btnLogin" defaultButton="true" mnemonicParsing="false" onAction="#handleLoginBtnClick" prefHeight="21.0" prefWidth="79.0" text="Send" underline="true" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </left>
+                     <right>
+                        <Button fx:id="btnClear" cancelButton="true" mnemonicParsing="false" onAction="#handleBtnClear" prefHeight="21.0" prefWidth="79.0" text="Avbryt" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </right>
+                  </BorderPane>
+               </children>
+            </VBox>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

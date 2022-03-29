@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.dbApp.gui.admin.Admin">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Medlemmer">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                 <children>
+                    <TableView fx:id="membersTable" layoutY="-1.0" prefHeight="371.0" prefWidth="600.0">
+                        <columns>
+                            <TableColumn text="E-Post">
+                                <cellValueFactory><PropertyValueFactory property="epost" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Navn">
+                                <cellValueFactory><PropertyValueFactory property="navn" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="Adresse">
+                                <cellValueFactory><PropertyValueFactory property="adresse" />
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn text="TLF">
+                                <cellValueFactory><PropertyValueFactory property="tlf" />
+                                </cellValueFactory>
+                            </TableColumn>
+                        </columns>
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+
+                            </FXCollections>
+                        </items>
+                    </TableView>
+                 </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Stuff">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
