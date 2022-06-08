@@ -1,4 +1,4 @@
-package dbms.user;
+package dbms.views.model;
 
 public class User {
 

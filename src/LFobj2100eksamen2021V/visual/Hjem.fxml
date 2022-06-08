@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <bottom>
+            <BorderPane prefHeight="5.0" prefWidth="400.0">
+               <right>
+                  <Button defaultButton="true" mnemonicParsing="false" text="Send" BorderPane.alignment="CENTER" />
+               </right>
+               <center>
+                  <TextField prefHeight="26.0" prefWidth="276.0" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+         </bottom>
+         <center>
+            <TextArea prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <Label text="Connected as:" BorderPane.alignment="CENTER" />
+         </top></BorderPane>
+   </center>
+   <left>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <ListView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <Label text="Select a room" BorderPane.alignment="CENTER" />
+         </top>
+         <bottom>
+            <BorderPane prefHeight="0.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <TextField promptText="Room name" BorderPane.alignment="CENTER" />
+               </center>
+               <right>
+                  <Button mnemonicParsing="false" text="New room" BorderPane.alignment="CENTER" />
+               </right>
+            </BorderPane>
+         </bottom>
+      </BorderPane>
+   </left>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Logout" />
+                  <MenuItem mnemonicParsing="false" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Action">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Disconnect chat" />
+                  <MenuItem mnemonicParsing="false" text="Toggle dark" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

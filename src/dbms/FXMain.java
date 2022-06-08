@@ -1,6 +1,6 @@
 package dbms;
 
-import dbms.database.UserTable;
+import dbms.views.model.UserTable;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -14,7 +14,7 @@ public class FXMain extends Application {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-        stage.setTitle("JallaFX");
+        stage.setTitle("JavaFX Login");
         UserTable.getInstance().printUsers();
     }
 

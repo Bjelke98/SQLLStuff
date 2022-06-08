@@ -1,6 +1,4 @@
-package dbms.database;
-
-import dbms.user.User;
+package dbms.views.model;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

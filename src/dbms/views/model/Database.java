@@ -1,4 +1,4 @@
-package dbms.database;
+package dbms.views.model;
 
 import java.sql.*;
 import java.util.HashMap;

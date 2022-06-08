@@ -1,4 +1,4 @@
-package dbms.database;
+package dbms.views.model;
 
 public abstract class DatabaseTable {
 

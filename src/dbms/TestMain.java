@@ -1,7 +1,7 @@
 package dbms;
 
-import dbms.database.UserTable;
-import dbms.user.User;
+import dbms.views.model.UserTable;
+import dbms.views.model.User;
 
 import java.sql.SQLException;
 import java.util.ArrayList;

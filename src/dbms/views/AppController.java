@@ -1,7 +1,7 @@
 package dbms.views;
 
-import dbms.database.UserTable;
-import dbms.user.User;
+import dbms.views.model.UserTable;
+import dbms.views.model.User;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Objects;
 
-public class ViewController {
+public class AppController {
 
     private static final UserTable userTable = UserTable.getInstance();
 

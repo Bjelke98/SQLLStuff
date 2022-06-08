@@ -1,7 +1,7 @@
-import dbms.FXMain;
+import arcTest.Main;
 
 public class Launch {
     public static void main(String[] args) {
-        FXMain.main(args);
+        Main.main(args);
     }
 }
